@@ -1,0 +1,6 @@
+System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");
+		WebDriver d= new ChromeDriver();
+	d.get("https://www.nykaa.com/");
+		File sr=((TakesScreenshot)d).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(sr,new File("C:\\Users\\INFO\\Desktop\\DEMO SCREENSHOT\\two.png"));
+	d.close();	
